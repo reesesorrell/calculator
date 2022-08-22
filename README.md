@@ -1,1 +1,1 @@
-# calculator
+The goal of this project is to create a fully functional calculator with various functions including addition, subtraction, multiplication, and division. It will utilize css, html, and javascript to display and run all operations.
