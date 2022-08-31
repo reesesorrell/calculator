@@ -12,7 +12,7 @@
         <div class="display"></div>
         <div class="row" id="1">
             <button class="options" id="clear" onclick="clearDisplay()">C</button>
-            <button class="options" id="negative">-</button>
+            <button class="options" id="delete" onclick="deleteDisplay()"><</button>
             <button class="options" id="percent">%</button>
             <button class="function" id="divide" onclick="updateDisplay(this)">/</button>
         </div>
@@ -37,7 +37,7 @@
         <div class="row" id="5">
             <button class="number" id="num0" onclick="updateDisplay(this)">0</button>
             <button class="number" id="decimal" onclick="updateDisplay(this)">.</button>
-            <button class="function" id="equal">=</button>
+            <button class="function" id="equal" onclick="evaluateEquation()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
