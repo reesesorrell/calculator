@@ -1,1 +1,3 @@
-The goal of this project is to create a fully functional calculator with various functions including addition, subtraction, multiplication, and division. It will utilize css, html, and javascript to display and run all operations.
+The goal of this project is to create a fully functional calculator with various functions including addition, subtraction, multiplication, and division. It will utilize css, html, and javascript to display and run all operations. 
+
+Further work is needed on the modulo operator when is currently unfunctional. A strange bug also occurs after using the equals sign in which a user cannot input another operator before inputing a number. Basic formating could also be improved.
