@@ -3,12 +3,13 @@ displayText = '';
 decimalPresent = false;
 operator = false;
 
-functions = ['+', '-', 'x', '/']
+functions = ['+', '-', 'x', '/', '%']
 functionConverter = {
     '+': add,
     '-': subtract,
     'x': multiply,
-    '/': divide
+    '/': divide,
+    '%': modulus
 }
 
 function add(a, b) {
@@ -27,6 +28,10 @@ function divide(a, b) {
     return a / b;
 }
 
+function modulus(a, b) {
+    return a % b
+}
+
 function operate(a, func, b) {
     return func(a, b);
 }
@@ -36,7 +41,7 @@ function updateDisplay(a) {
     if (functions.includes(a.textContent)) {
         decimalPresent = false;
         evaluateEquation();
-        displayText += a.textContent
+        displayText += a.textContent;
     }
     else if (a.textContent == '.') {
         if (!decimalPresent) {
